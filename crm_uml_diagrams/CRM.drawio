@@ -1,0 +1,94 @@
+<mxfile host="drawio-plugin" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" modified="2025-03-02T15:31:41.835Z" version="22.1.22" etag="12msDj3YUG0yKGQfJi4I" type="embed" pages="4">
+  <diagram id="UseCaseDiagram" name="Use Case Diagram">
+    <mxGraphModel dx="749" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UserActor" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="50" y="50" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LoginUseCase" value="Login" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ManageCustomerUseCase" value="Manage Customers" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GenerateReportUseCase" value="Generate Reports" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ExportUseCase" value="Export Data (CSV/PDF)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LogoutUseCase" value="Logout" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UserToLogin" parent="1" source="UserActor" target="LoginUseCase" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UserToManageCustomer" parent="1" source="UserActor" target="ManageCustomerUseCase" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UserToGenerateReport" parent="1" source="UserActor" target="GenerateReportUseCase" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UserToExport" parent="1" source="UserActor" target="ExportUseCase" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UserToLogout" parent="1" source="UserActor" target="LogoutUseCase" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Flowchart" name="Flowchart">
+    <mxGraphModel dx="749" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Start" value="Start" style="ellipse;fillColor=#90EE90;" parent="1" vertex="1">
+          <mxGeometry x="50" y="50" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LoginCheck" value="User Login" style="rhombus;" parent="1" vertex="1">
+          <mxGeometry x="200" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ManageCustomers" value="Manage Customers" style="rectangle;" parent="1" vertex="1">
+          <mxGeometry x="400" y="50" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GenerateReports" value="Generate Reports" style="rectangle;" parent="1" vertex="1">
+          <mxGeometry x="400" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Logout" value="Logout" style="ellipse;fillColor=#FF6347;" parent="1" vertex="1">
+          <mxGeometry x="600" y="100" width="80" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ClassDiagram" name="Class Diagram">
+    <mxGraphModel dx="749" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UserClass" value="User|+ id: Integer&#xa;+ username: String&#xa;+ password: String" style="shape=umlClass;" parent="1" vertex="1">
+          <mxGeometry x="50" y="50" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CustomerClass" value="Customer|+ id: Integer&#xa;+ name: String&#xa;+ email: String&#xa;+ phone: String&#xa;+ company: String" style="shape=umlClass;" parent="1" vertex="1">
+          <mxGeometry x="300" y="50" width="160" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ERDiagram" name="ER Diagram">
+    <mxGraphModel dx="749" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UserEntity" value="User (id, username, password)" style="swimlane;" parent="1" vertex="1">
+          <mxGeometry x="50" y="50" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CustomerEntity" value="Customer (id, name, email, phone, company)" style="swimlane;" parent="1" vertex="1">
+          <mxGeometry x="300" y="50" width="240" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
